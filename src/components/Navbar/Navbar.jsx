@@ -10,7 +10,7 @@ const Navbar = () => {
       {imgLogo ? (
         <img src={imgLogo} />
       ) : (
-        <h1 className="text-3xl font-bold py-5">{textLogo}</h1>
+        <Link to={"/"} className="text-3xl font-bold py-5 select-none">{textLogo}</Link>
       )}
       <div className="flex gap-2">
         {[
