@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'bedar-sc1': "1167px",
+        'bedar-sc2': "967px",
+      }
+    },
   },
   plugins: [],
 }
