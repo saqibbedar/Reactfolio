@@ -8,4 +8,5 @@ html, body{
     font-family: "Inter", sans-serif;
     color: #141718;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
