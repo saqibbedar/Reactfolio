@@ -4,8 +4,13 @@ import {
   FaLinkedin,
   FaFacebookSquare,
 } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 
-const icons = [
+const icons = {
+  LuGraduationCap,
+}
+
+const footerIcons = [
   {
     name: "linkedIn",
     component: FaLinkedin,
@@ -31,12 +36,30 @@ const icons = [
 const textLogo = "Brand Name";
 const imgLogo = null;
 
-const authorDetails = {
+const AboutPage = {
   authorProfile:
-    "https://media.contra.com/image/upload/c_fill,f_avif,h_176,q_auto:good,w_176/jvgmbua0vfvwokvjgnge",
+    "https://avatars.githubusercontent.com/u/124094939?v=4https://avatars.githubusercontent.com/u/124094939?v=4",
   authorDescription:
     "I'm Ahmed, an Android Developer with over three years of specialized experience in Kotlin programming. I offer high-quality and efficient app development solutions tailored to your unique needs. Let's create user-friendly apps with clean code for your business success.",
   getInTouchUrl: "https://contra.com/ahmed_fayaz_n6f1ycoi",
 };
 
-export { icons, textLogo, imgLogo, authorDetails };
+const EducationPage = [
+  {
+    icon: icons.LuGraduationCap,
+    graduationYear: 2021,
+    degreeType: "High School",
+    institution: "Cadet College Larkana",
+    institutionUrl: "",
+  },
+  {
+    icon: icons.LuGraduationCap,
+    graduationYear: 2027,
+    degreeType: "Bachelor's degree",
+    institution: "QAU, Islamabad",
+    institutionUrl: "",
+  },
+];
+
+
+export { icons, textLogo, imgLogo, AboutPage, footerIcons, EducationPage };
