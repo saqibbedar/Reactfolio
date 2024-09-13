@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { AboutPage } from "../assets/assets";
-import { useEffect } from "react";
+
 const {
   authorProfile,
   authorDescription,
@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       <div
-        className="flex flex-col bedar-sc1:flex-row justify-between items-center gap-6 mt-[.5rem] bedar-sc2:mt-2 rounded-2xl px-6 bedar-sc2:px-10 bedar-sc1:px-16  pt-8 pb-5 bedar-sc2:py-10 border border-zinc-200 "
+        className={`flex flex-col bedar-sc1:flex-row justify-between items-center gap-6 mt-[.5rem] bedar-sc2:mt-2 rounded-2xl px-6 bedar-sc2:px-10 bedar-sc1:px-16  pt-8 pb-5 bedar-sc2:py-10 border border-zinc-200`}
         id="About"
       >
         <div className="w-full bedar-sc1:w-1/2 flex flex-col gap-5">

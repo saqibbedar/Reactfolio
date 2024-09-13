@@ -1,17 +1,13 @@
 import { Link } from "react-router-dom";
 import { EducationPage } from "../assets/assets";
 import { LuGraduationCap } from "react-icons/lu";
+import { containerStyle } from "./styles.js";
+import { PageTitle } from "../components/components.js";
 
 const Education = () => {
   return (
-    <div
-      id="Education"
-      className="flex flex-col gap-4 mt-5 rounded-2xl px-6 bedar-sc2:px-16 py-6 bedar-sc2:py-10 border border-zinc-200 "
-    >
-      <div className="flex flex-col gap-4 w-full">
-        <div className="text-2xl font-medium">Education</div>
-        <hr className="h-[1px] w-full bg-zinc-200 border-none" />
-      </div>
+    <div id="Education" className={`${containerStyle}`}>
+      <PageTitle title={"Education"} />
       <div className="grid grid-cols-1 bedar-sc2:grid-cols-2 bedar-sc2:gap-4">
         {EducationPage.map(
           ({ degreeType, graduationYear, institution, institutionUrl }) => (

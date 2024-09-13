@@ -4,6 +4,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Services from "./Services";
 import Contact from "./Contact";
+import Certificates from "./Certificates";
 
 export {
     About,
@@ -12,4 +13,5 @@ export {
     Projects,
     Services,
     Contact,
+    Certificates,
 };
