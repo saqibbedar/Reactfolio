@@ -51,6 +51,8 @@ const AboutPage = {
   getInTouchUrl: "",
   authorName: "John Doe",
   profileImgTagLine: "Software Engineer @ Google",
+  authorContactMail: "johndoe@gmail.com",
+  authorContactNumber: "843-695-0671",
 };
 
 const EducationPage = [
@@ -70,51 +72,51 @@ const EducationPage = [
 
 const CertificatesPage = [
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
-    title: "Programming with JavaScript",
+    img: "https://i.pinimg.com/736x/c3/80/29/c38029a42d38c9168b28442688241ea5.jpg",
+    title: "Blue Mountain Certificate",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
-    issuedBy: "Coursera",
+    issuedBy: "Blue Mountain",
     credentialURL: "/",
   },
 ];
