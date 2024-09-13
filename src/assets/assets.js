@@ -68,6 +68,57 @@ const EducationPage = [
   },
 ];
 
+const CertificatesPage = [
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+  {
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQQDmISyyFrR4fO-bXZNPJOU03pQbVWYVC_Tf6RzfVBlOIaYKZn9RfxCJZxHd2SWbNyjFwbhY8zntQQAiqGxI5R_6GXHgZa0MzA2rhKJC-WJXs1foaQzSijM-n0s8P4-AO5wAijUpv8T2-A3sViK2aeDyEz0SrhiA7y97FfMcBd145rFGDVUpoWRFDYETD/s1600/Coursera%201%20of%201.webp",
+    title: "Programming with JavaScript",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias odit sed suscipit magnam cupiditate distinctio sequi laboriosam nemo beatae itaque ullam quae ipsum aut maiores nobis, ea dignissimos dolorum?",
+    issuedBy: "Coursera",
+    credentialURL: "/",
+  },
+];
+
 const skillsPage = [
   FaGitAlt,
   FaGithub,
@@ -126,4 +177,4 @@ const projectsPage = [
   },
 ];
 
-export { textLogo, imgLogo, AboutPage, footerIcons, EducationPage, skillsPage, projectsPage };
+export { textLogo, imgLogo, AboutPage, footerIcons, EducationPage, skillsPage, projectsPage, CertificatesPage };
