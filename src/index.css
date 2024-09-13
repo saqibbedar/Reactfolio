@@ -10,3 +10,16 @@ html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.121);
+  border-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 8px;
+}
