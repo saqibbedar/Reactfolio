@@ -9,6 +9,7 @@ export default {
       screens: {
         'bedar-sc1': "1167px",
         'bedar-sc2': "967px",
+        'bedar-sm' : "467px",
         // 'bedar-xl' : "1667px",
       }
     },
