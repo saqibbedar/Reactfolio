@@ -4,10 +4,12 @@ import { AboutPage, footerIcons } from "../assets/assets.js";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useState } from "react";
 
 const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-colors ease-linear`;
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <div id="Contact" className={`${containerStyle}`}>
       <PageTitle title={"Contact"} />
@@ -20,6 +22,7 @@ const Contact = () => {
         </div>
         <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-white font-light leading-[26px] text-[18px]">
           <img
+            onLoad={()=>setIsLoading(false)}
             src={AboutPage.authorProfile}
             className="w-36 h-36 rounded-full border-2 border-white"
             alt="author-profile"

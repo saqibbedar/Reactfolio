@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { IoEyeSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const Certificate = ({isFlexShrink, img, title, description, issuedBy, credentialURL}) => {
+const Certificate = ({ isFlexShrink, img, title, description, issuedBy, credentialURL }) => {
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <div
       className={`${
@@ -9,8 +11,9 @@ const Certificate = ({isFlexShrink, img, title, description, issuedBy, credentia
       } h-full bg-mainColor text-white flex flex-col gap-4 rounded-lg p-3 mb-4 border border-zinc-200 shadow overflow-hidden`}
     >
       <img
-        className="aspect-video rounded-lg select-none"
+        className={`aspect-video rounded-lg select-none ${isLoading ? "skeleton" : ""}`}
         src={img}
+        onLoad={()=> setIsLoading(false)}
         alt="Credential-img"
       />
       <strong className="text-xl text-[#fedf89]">{title}</strong>

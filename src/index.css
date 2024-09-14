@@ -24,3 +24,23 @@ html, body{
   background: grey;
   border-radius: 8px;
 }
+
+.skeleton{
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.skeleton::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding-block: 20px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #eee, #dedede, #eee);
+  background-size: 200%;
+  animation: skeleton .7s infinite linear reverse;
+}

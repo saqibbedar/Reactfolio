@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { AboutPage } from "../assets/assets";
+import { useState } from "react";
 
 const {
   authorProfile,
@@ -10,6 +11,8 @@ const {
 } = AboutPage;
 
 const About = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <>
@@ -31,7 +34,11 @@ const About = () => {
         </div>
         <div className="w-full bedar-sc1:w-1/2 flex justify-center bedar-sc1:justify-end">
           <div className="relative w-full h-full bedar-sc2:w-[25rem] bedar-sc2:h-[25rem] rounded-2xl cursor-pointer shadow-md border transition-shadow ease-linear hover:shadow-lg overflow-hidden group">
-            <img src={authorProfile} className="w-full h-full" />
+            <img
+              src={authorProfile}
+              onLoad={() => setIsLoading(false)}
+              className={`w-full h-full ${isLoading ? "skeleton" : ""}`}
+            />
             <div
               className={`absolute bottom-0 text-white w-full px-4 py-3 backdrop-blur-[10px] flex gap-1 justify-center flex-wrap text-center transition-all ease-linear invisible opacity-0 group-hover:opacity-100 group-hover:visible`}
             >
