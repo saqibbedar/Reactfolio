@@ -4,7 +4,7 @@ import { CertificatesPage } from "../assets/assets.js";
 
 const Certificates = () => {
   return (
-    <div className={`${containerStyle}`}>
+    <div id="Certificates" className={`${containerStyle}`}>
       <PageTitle title={"Certificates"} />
       <div>
         <div className="flex gap-3 flex-nowrap overflow-x-auto overflow-y-hidden custom-scrollbar">

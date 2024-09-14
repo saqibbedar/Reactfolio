@@ -16,7 +16,6 @@ import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 
-
 const footerIcons = [
   {
     name: "linkedIn",
@@ -42,6 +41,15 @@ const footerIcons = [
 
 const textLogo = "John Doe";
 const imgLogo = null;
+
+const navElements = [
+  "About",
+  "Education",
+  "Skills",
+  "Projects",
+  "Services",
+  "Contact",
+];
 
 const AboutPage = {
   authorProfile:
@@ -130,7 +138,7 @@ const skillsPage = [
   TbBrandKotlin,
   FaPython,
   FaHtml5,
-  BsFiletypeXml,  
+  BsFiletypeXml,
   FaCss3Alt,
   RiTailwindCssFill,
   FaYoutube,
@@ -169,14 +177,16 @@ const projectsPage = [
     tags: "Flask, React.js, MongoDB, Rest API",
     date: "Sep 2022, - May 2023",
   },
-  {
-    projectName: "Git clone",
-    projectDescription: "lorem ipsum dollar amit...",
-    projectURL: "/",
-    githubRepositoryURL: "/",
-    tags: "Flask, React.js, MongoDB, Rest API",
-    date: "Sep 2022, - May 2023",
-  },
 ];
 
-export { textLogo, imgLogo, AboutPage, footerIcons, EducationPage, skillsPage, projectsPage, CertificatesPage };
+export {
+  navElements,
+  textLogo,
+  imgLogo,
+  AboutPage,
+  footerIcons,
+  EducationPage,
+  skillsPage,
+  projectsPage,
+  CertificatesPage,
+};

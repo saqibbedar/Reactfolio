@@ -13,7 +13,7 @@ const Education = () => {
           ({ degreeType, graduationYear, institution, institutionUrl }) => (
             <div
               key={2}
-              className="flex flex-col gap-4 my-2 bg-[#373f51] text-white rounded-md px-8 py-6 shadow-md shadow-[#000]/15"
+              className="flex flex-col gap-4 my-2 bg-mainColor text-white rounded-md px-8 py-6 shadow-md shadow-[#000]/15"
             >
               <div>
                 <div>{graduationYear}</div>

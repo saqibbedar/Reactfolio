@@ -6,9 +6,10 @@
 
 html, body{
     font-family: "Inter", sans-serif;
-    color: #141718;
+    color: #212835;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding: 110px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

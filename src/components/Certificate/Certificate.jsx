@@ -6,7 +6,7 @@ const Certificate = ({isFlexShrink, img, title, description, issuedBy, credentia
     <div
       className={`${
         isFlexShrink ? "w-80 flex-shrink-0" : "w-auto bedar-sm:w-80"
-      } h-full bg-white flex flex-col gap-4 rounded-lg p-3 mb-3 border border-zinc-200 shadow overflow-hidden`}
+      } h-full bg-white flex flex-col gap-4 rounded-lg p-3 mb-4 border border-zinc-200 shadow overflow-hidden`}
     >
       <img
         className="aspect-video rounded-lg select-none"
@@ -24,7 +24,7 @@ const Certificate = ({isFlexShrink, img, title, description, issuedBy, credentia
         </div>
         <Link
           to={credentialURL}
-          className="flex items-center gap-1 hover:text-black/70 font-semibold"
+          className="flex items-center gap-1 hover:text-textHover font-semibold"
           title="View Credential"
         >
           <IoEyeSharp className="w-6 h-6" />

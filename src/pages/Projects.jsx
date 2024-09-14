@@ -1,8 +1,34 @@
 import { PageTitle, Project } from "../components/components.js";
 import { projectsPage } from "../assets/assets.js";
 import { containerStyle } from "./styles.js";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoArrowBackOutline } from "react-icons/io5";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    let btn = document.querySelector(".project-btn");
+
+    const handleMouseEnter = () => {
+      setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovered(false);
+    };
+
+    btn.addEventListener("mouseenter", handleMouseEnter);
+    btn.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      btn.removeEventListener("mouseenter", handleMouseEnter);
+      btn.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div id="Projects" className={`${containerStyle}`}>
       <PageTitle title={"Projects"} />
@@ -28,6 +54,18 @@ const Projects = () => {
               />
             )
           )}
+        </div>
+        <div>
+          <Link to={"/"} className="flex justify-center mt-9">
+            <button className="project-btn bg-mainColor text-white py-3 px-4 rounded-full flex items-center gap-2 transition-transform ease-linear">
+              More Projects{" "}
+              {isHovered ? (
+                <IoArrowBackOutline className="w-5 h-5 rotate-180" />
+              ) : (
+                <IoIosArrowForward className="w-5 h-5" />
+              )}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const About = () => {
           <div>{authorDescription}</div>
           <Link
             to={getInTouchUrl}
-            className="bg-[#373f51] text-white px-4 py-2 rounded-full w-fit hover:bg-[#424a64] transition-all ease-in-out text-[1rem]"
+            className="bg-mainColor text-white px-4 py-2 rounded-full w-fit hover:bg-mainHover transition-all ease-in-out text-[1rem]"
           >
             Get In Touch
           </Link>

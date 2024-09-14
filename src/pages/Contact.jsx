@@ -5,18 +5,20 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 
+const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-colors ease-linear`;
+
 const Contact = () => {
   return (
-    <div id="#Contact" className={`${containerStyle}`}>
+    <div id="Contact" className={`${containerStyle}`}>
       <PageTitle title={"Contact"} />
-      <div className="flex flex-col bedar-sc2:flex-row bg-black rounded-xl overflow-hidden">
+      <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
         <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
           <img
             src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
             alt=""
           />
         </div>
-        <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-[#6e6e73] font-medium leading-[26px] text-[18px]">
+        <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-white font-light leading-[26px] text-[18px]">
           <img
             src={AboutPage.authorProfile}
             className="w-36 h-36 rounded-full border-2 border-white"
@@ -33,14 +35,14 @@ const Contact = () => {
           </div>
           <Link
             to={`mailto:${AboutPage.authorContactMail}`}
-            className="flex items-center gap-2"
+            className={LinkStyles}
           >
             <MdEmail className="w-6 h-6" />{" "}
             <span>{AboutPage.authorContactMail}</span>
           </Link>
           <Link
             to={`tel:${AboutPage.authorContactMail}`}
-            className="flex items-center gap-2"
+            className={LinkStyles}
           >
             <FaPhoneAlt className="w-[18px] h-[18px]" />{" "}
             <span>{AboutPage.authorContactNumber}</span>
@@ -49,7 +51,7 @@ const Contact = () => {
             {footerIcons.map(
               ({ name, component: IconComponent, link }, index) => (
                 <Link to={link} key={index} title={name}>
-                  <IconComponent className="h-9 w-9"/>
+                  <IconComponent className="h-9 w-9 fill-zinc-400 hover:fill-white transition-colors ease-linear" />
                 </Link>
               )
             )}
