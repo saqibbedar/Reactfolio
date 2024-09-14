@@ -5,26 +5,26 @@ const Certificate = ({isFlexShrink, img, title, description, issuedBy, credentia
   return (
     <div
       className={`${
-        isFlexShrink ? "w-80 flex-shrink-0" : "w-auto bedar-sm:w-80"
-      } h-full bg-white flex flex-col gap-4 rounded-lg p-3 mb-4 border border-zinc-200 shadow overflow-hidden`}
+        isFlexShrink && "w-[300px] flex-shrink-0"
+      } h-full bg-mainColor text-white flex flex-col gap-4 rounded-lg p-3 mb-4 border border-zinc-200 shadow overflow-hidden`}
     >
       <img
         className="aspect-video rounded-lg select-none"
         src={img}
         alt="Credential-img"
       />
-      <strong className="text-xl">{title}</strong>
-      <div>{description}</div>
+      <strong className="text-xl text-[#fedf89]">{title}</strong>
+      <div className="line-clamp-6 ">{description}</div>
       <div className="flex justify-between">
         <div
-          className="font-bold cursor-pointer"
+          className="font-bold cursor-pointer "
           title={`issued by ${issuedBy}`}
         >
           {issuedBy}
         </div>
         <Link
           to={credentialURL}
-          className="flex items-center gap-1 hover:text-textHover font-semibold"
+          className="flex items-center gap-1 hover:text-white/65 transition-colors ease-linear font-semibold"
           title="View Credential"
         >
           <IoEyeSharp className="w-6 h-6" />

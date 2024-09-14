@@ -8,12 +8,12 @@ const Education = () => {
   return (
     <div id="Education" className={`${containerStyle}`}>
       <PageTitle title={"Education"} />
-      <div className="grid grid-cols-1 bedar-sc2:grid-cols-2 bedar-sc2:gap-4">
+      <div className="grid grid-cols-1 bedar-sc2:grid-cols-2 gap-4">
         {EducationPage.map(
           ({ degreeType, graduationYear, institution, institutionUrl }) => (
             <div
               key={2}
-              className="flex flex-col gap-4 my-2 bg-mainColor text-white rounded-md px-8 py-6 shadow-md shadow-[#000]/15"
+              className="flex flex-col gap-4 bg-mainColor text-white rounded-md p-5 bedar-sc2:p-8 shadow-md shadow-[#000]/15"
             >
               <div>
                 <div>{graduationYear}</div>

@@ -14,17 +14,17 @@ const About = () => {
   return (
     <>
       <div
-        className={`flex flex-col bedar-sc1:flex-row justify-between items-center gap-6 mt-[.5rem] bedar-sc2:mt-2 rounded-2xl px-6 bedar-sc2:px-10 bedar-sc1:px-16  pt-8 pb-5 bedar-sc2:py-10 border border-zinc-200`}
+        className={`bg-mainColor text-white flex flex-col bedar-sc1:flex-row justify-between items-center gap-6 mt-[.5rem] bedar-sc2:mt-2 rounded-2xl px-6 bedar-sc2:px-10 bedar-sc1:px-16  pt-8 pb-5 bedar-sc2:py-10 border border-zinc-200`}
         id="About"
       >
         <div className="w-full bedar-sc1:w-1/2 flex flex-col gap-5">
-          <div className="text-2xl">
-            Hi, I am <strong>{authorName}</strong>
+          <div className="text-3xl">
+            Hi, I am <strong className="text-[#fedf89]">{authorName}</strong>
           </div>
-          <div>{authorDescription}</div>
+          <div className="leading-7 text-lg ">{authorDescription}</div>
           <Link
             to={getInTouchUrl}
-            className="bg-mainColor text-white px-4 py-2 rounded-full w-fit hover:bg-mainHover transition-all ease-in-out text-[1rem]"
+            className="bg-white text-textColor px-4 py-2 rounded-full w-fit hover:bg-[#fedf89] hover:text-textColor font-semibold transition-all ease-linear text-[1rem]"
           >
             Get In Touch
           </Link>

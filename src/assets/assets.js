@@ -15,27 +15,34 @@ import {
 import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoGithub } from "react-icons/io";
 
 const footerIcons = [
   {
+    name: "x",
+    component: FaSquareXTwitter,
+    link: "",
+  },
+  {
     name: "linkedIn",
     component: FaLinkedin,
-    link: "https://www.linkedin.com/in/yourprofile",
+    link: "",
   },
   {
     name: "facebook",
     component: FaFacebookSquare,
-    link: "https://www.facebook.com/yourprofile",
+    link: "",
   },
   {
     name: "instagram",
     component: FaInstagramSquare,
-    link: "https://www.instagram.com/yourprofile",
+    link: "",
   },
   {
-    name: "discord",
-    component: FaDiscord,
-    link: "https://discord.com/yourprofile",
+    name: "github",
+    component: IoLogoGithub,
+    link: "",
   },
 ];
 
@@ -47,7 +54,6 @@ const navElements = [
   "Education",
   "Skills",
   "Projects",
-  "Services",
   "Contact",
 ];
 

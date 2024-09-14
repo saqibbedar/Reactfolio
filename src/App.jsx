@@ -23,7 +23,7 @@ const App = () => {
         <Skills />
         <Certificates />
         <Projects />
-        <Services />
+        {/* <Services /> */}
         <Contact />
       </div>
       <Footer activeElem={activeElem} setActiveElem={setActiveElem} />

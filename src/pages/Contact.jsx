@@ -24,7 +24,7 @@ const Contact = () => {
             className="w-36 h-36 rounded-full border-2 border-white"
             alt="author-profile"
           />
-          <h1 className="text-5xl font-extrabold text-white my-4">
+          <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-[#fedf89] my-4 text-center">
             Contact Me
           </h1>
           <div className="text-center mb-4">
@@ -51,7 +51,7 @@ const Contact = () => {
             {footerIcons.map(
               ({ name, component: IconComponent, link }, index) => (
                 <Link to={link} key={index} title={name}>
-                  <IconComponent className="h-9 w-9 fill-zinc-400 hover:fill-white transition-colors ease-linear" />
+                  <IconComponent className="h-9 w-9 rounded-lg fill-zinc-400 hover:fill-white transition-colors ease-linear" />
                 </Link>
               )
             )}
