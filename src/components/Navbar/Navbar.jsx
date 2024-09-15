@@ -28,7 +28,7 @@ const Navbar = ({ activeElem, setActiveElem }) => {
   return (
     <div
       className={`fixed w-full left-0 top-0 px-5 bedar-sc1:px-10 py-4 
-       z-10`}
+       z-50`}
     >
       <div
         className={`flex items-center justify-between px-5 bedar-sc2:px-10 bedar-sc1:px-10 border rounded-full border-zinc-200 bg-[#ffffff85] backdrop-blur-[20px] backdrop-saturate-[180%]`}
