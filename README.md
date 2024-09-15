@@ -21,9 +21,9 @@ Before starting, ensure you have the following installed on your machine:
 
 Follow these steps to create and deploy your portfolio:
 
-### Step 1: Fork and Clone the Repository
+## Step 1: Fork and Clone the Repository
 
-To begin, you should fork the repository so you have your own copy of the project.
+To begin, you should fork this repository so you have your own copy of the project.
 
 1. Click the Fork button at the top-right corner of this page to create a copy of the repository in your GitHub account.
 2. Once the repository is forked, clone it to your local machine by running the following command in your terminal:
@@ -34,7 +34,7 @@ git clone https://github.com/your-username/Reactfolio
 
 Replace `your-username` with your actual GitHub username.
 
-### Step 2: Install Dependencies
+## Step 2: Install Dependencies
 
 Navigate to the project folder and install the required dependencies:
 
@@ -43,7 +43,7 @@ cd reactfolio
 npm install
 ```
 
-### Step 3: Start deployment server
+## Step 3: Start deployment server
 
 Start your development server with the following command to preview your portfolio:
 
@@ -53,12 +53,11 @@ npm run dev
 
 You can view your website locally on [`http://localhost:5173/Reactfolio/`](http://localhost:5173/Reactfolio/)
 
-### Step 4: Update [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file Data
+## Step 4: Update [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file Data
 
-The main data for the portfolio is located in the [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file. Open it and replace the dummy data with your actual information:
+The main data for the portfolio is located in the `assets.js` file. Open it and replace the dummy data with your actual information:
 
-<details>
-<summary>Here is a basic structure of what you need to update in <code>assets.js</code>:</summary>
+Here is a basic structure of what you need to update in assets.js`
 
 ```js
 // Replace dummy values with your actual information.
@@ -75,9 +74,7 @@ const AboutPage = {
 // Similarly, update other values as needed...
 ```
 
-</details>
-
-### Step 5: Update [`vite.config.js`](https://github.com/saqibbedar/Reactfolio/blob/main/vite.config.js) File
+## Step 5: Update [`vite.config.js`](https://github.com/saqibbedar/Reactfolio/blob/main/vite.config.js) File
 
 After updating your data in `assets.js`, you’ll need to modify the `base` value in the `vite.config.js` file with your repository name for proper deployment:
 
@@ -100,7 +97,7 @@ After updating your data in `assets.js`, you’ll need to modify the `base` valu
 </details>
  
 
-### Step 6: Update Git Repository
+## Step 6: Update Git Repository
 
 Before deploying, push your changes to your GitHub repository:
 
@@ -110,7 +107,7 @@ git commit -m "Customize portfolio"
 git push origin main
 ```
 
-### Step 7: Deploy your portfolio
+## Step 7: Deploy your portfolio
 
 Once everything is set up, you can deploy your portfolio to GitHub Pages by running the following command:
 
