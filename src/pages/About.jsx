@@ -37,7 +37,9 @@ const About = () => {
             <img
               src={authorProfile}
               onLoad={() => setIsLoading(false)}
-              className={`w-full h-full ${isLoading ? "skeleton" : ""}`}
+              className={`bg-[#beb7e0] aspect-square bedar-sc2:w-full bedar-sc2:h-full ${
+                isLoading ? "skeleton" : ""
+              }`}
             />
             <div
               className={`absolute bottom-0 text-white w-full px-4 py-3 backdrop-blur-[10px] flex gap-1 justify-center flex-wrap text-center transition-all ease-linear invisible opacity-0 group-hover:opacity-100 group-hover:visible`}

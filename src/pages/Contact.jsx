@@ -10,6 +10,7 @@ const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-color
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isProfileLoading, setIsProfileLoading] = useState(true);
   return (
     <div id="Contact" className={`${containerStyle}`}>
       <PageTitle title={"Contact"} />
@@ -17,14 +18,18 @@ const Contact = () => {
         <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
           <img
             src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
-            alt=""
+            onLoad={() => setIsLoading(false)}
+            className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
+            alt="contact-us-image"
           />
         </div>
         <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-white font-light leading-[26px] text-[18px]">
           <img
-            onLoad={()=>setIsLoading(false)}
+            onLoad={() => setIsProfileLoading(false)}
             src={AboutPage.authorProfile}
-            className="w-36 h-36 rounded-full border-2 border-white"
+            className={`bg-[#beb7e0] w-36 h-36 rounded-full border-2 border-white ${
+              isProfileLoading ? "skeleton" : ""
+            }`}
             alt="author-profile"
           />
           <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-[#fedf89] my-4 text-center">
