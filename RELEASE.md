@@ -1,6 +1,11 @@
 # Reactfolio Release Notes 🚀
 
-**Reactfolio** is a customizable portfolio template designed for developers looking to showcase their work with style and simplicity. This is the initial release of Reactfolio, setting the foundation for creating an impressive developer portfolio using modern technologies.
+**Reactfolio** is a customizable portfolio template designed for developers looking to showcase their work with style and simplicity. This document outlines the release history and notable changes in Reactfolio.
+
+## v1.1.0 - SEO Optimization and Documentation Update
+- **SEO Meta Tags:** Added meta tags in HTML for improved search engine optimization.
+- **Updated Documentation:** Revised and expanded the documentation for better user guidance.
+- **Minor Bug Fixes:** Addressed small issues to enhance overall stability.
 
 ## v1.0.0 - Initial Release
 - **React and Vite Setup:** Set up a modern development environment with React and Vite.

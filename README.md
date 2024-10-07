@@ -29,17 +29,15 @@ To begin, you should fork this repository so you have your own copy of the proje
 2. Once the repository is forked, clone it to your local machine by running the following command in your terminal:
 
 ```bash
-git clone https://github.com/your-username/Reactfolio
+git clone hhttps://github.com/saqibbedar/Reactfolio.git
 ```
-
-Replace `your-username` with your actual GitHub username.
 
 ## Step 2: Install Dependencies
 
 Navigate to the project folder and install the required dependencies:
 
 ```bash
-cd reactfolio
+cd Reactfolio
 npm install
 ```
 
