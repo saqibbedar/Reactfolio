@@ -1,6 +1,6 @@
 
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.2.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.3.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -35,7 +35,6 @@ Before starting, ensure you have the following installed on your machine:
    
    > **Note:** You do not need Node.js installed on your machine as the build and deployment process will be handled by GitHub Actions.
 
-</br>
 
 # Getting started
 
