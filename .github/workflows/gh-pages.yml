@@ -1,0 +1,39 @@
+name: Deploy Reactfolio to GitHub Pages
+
+# Triggers the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch if it's different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.15.1'  # Ensure this matches your Node version
+
+      - name: Install dependencies
+        run: npm install
+
+      # Step to modify vite.config.js to dynamically set base with the repository name
+      - name: Update vite.config.js base value
+        run: |
+          REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
+          echo "Repository Name: $REPO_NAME"
+          sed -i "s|base: .*|base: '/$REPO_NAME/',|" vite.config.js
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # This is where Vite outputs its build files
