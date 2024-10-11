@@ -1,6 +1,5 @@
-
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.3.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.4.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -18,29 +17,15 @@
 
 ![Reactfolio Header Image](./public/header.jpg)
 
-# Reactfolio
+# Welcome Docker Users! 🚀
 
-**Reactfolio** is a customizable portfolio template built with React, Vite, and TailwindCSS. This template allows you to easily create your own developer portfolio for free. It is designed to be flexible and easy to modify, with all the data stored in a single [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file.
+**Reactfolio** now supports Docker from version 1.4.0! If you're interested in containerizing your portfolio and deploying it with ease, you're in the right place. We've created a new `docker-deploy` branch specifically for users who want to build and deploy their projects using Docker. This branch includes automated deployment via GitHub Actions, making it simpler than ever to showcase your work.
 
-# Quick Demo
-
-Check out the live demo of the portfolio [here](https://saqibbedar.github.io/Reactfolio/).
-
-
-# Prerequisite
-
-Before starting, ensure you have the following installed on your machine:
-
-1. **Git:** Download and install Git from [here](https://git-scm.com/downloads).
-   
-   > **Note:** You do not need Node.js installed on your machine as the build and deployment process will be handled by GitHub Actions.
-
-
-# Getting started
+# Installation & Setup 🛠️
 
 Follow these steps to create and deploy your portfolio:
 
-## Step 1: Fork and Clone the Repository
+## Step 1: Fork and Clone the Repository 📂
 
 To begin, you should fork this repository so you have your own copy of the project.
 
@@ -51,7 +36,7 @@ To begin, you should fork this repository so you have your own copy of the proje
 git clone https://github.com/saqibbedar/Reactfolio.git
 ```
 
-## Step 2: Update [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file Data
+## Step 2: Update [`assets.js`](https://github.com/saqibbedar/Reactfolio/blob/main/src/assets/assets.js) file Data 📝
 
 The main data for the portfolio is located in the `assets.js` file. Open it and replace the dummy data with your actual information:
 
@@ -72,57 +57,54 @@ const AboutPage = {
 // Similarly, update other values as needed...
 ```
 
-## Step 3:  Push Changes to GitHub
+## Step 3: Docker Setup 🐳
 
-Once you’ve updated the `assets.js` file, you can push your changes to your GitHub repository.
+If you prefer Docker for serving your portfolio, follow these steps:
+
+- **Build Docker Image**
+
+  1. Build the Docker image by navigating to your project directory and running:
+
+      ```bash
+      docker build -t reactfolio .
+      ```
+  2. Once the image is built, you can run it with:
+      ```bash
+      docker run -d -p 3000:3000 reactfolio
+      ```
+      The portfolio will be served locally at http://localhost:3000.
+
+## Step 4: Switch to `docker-deploy` Branch
+
+Before making any changes, ensure you are on the `docker-deploy` branch. You can switch to this branch using the following command:
+
+```bash
+git checkout docker-deploy
+```
+
+## Step 5: Push Changes to GitHub
+
+Once you’ve updated the `assets.js` file, you can push your changes to your GitHub repository on the `docker-deploy` branch.
 
 ```bash
 git add .
 git commit -m "Customize portfolio"
-git push origin main
+git push origin docker-deploy
 ```
-
-## Step 4: Automatic Deployment via GitHub Actions
-
-The GitHub Actions workflow will automatically handle the following tasks whenever you push to the main branch:
-
-* **Update `vite.config.js`**: It will automatically set the correct `base` value for your GitHub Pages deployment.
-* **Build the project**: Vite will create a production-ready build.
-* **Deploy to GitHub Pages**: Your portfolio will be deployed to GitHub Pages.
-
-You can view the live version of your portfolio at [`https://<your-username>.github.io/<repository-name>/`](https://<your-username>.github.io/<repository-name>/) once the action completes successfully.
-
-# Optional: Local Development (If Needed)
-
-If you want to run the project locally, follow these steps:
-
-1. Install [Node.js](https://nodejs.org/en/download/prebuilt-installer) on your machine.
-2. Install the dependencies:
-
-    ```bash
-    npm install
-    ```
-
-2. Run the development server:
-
-    ```bash
-    npm run dev
-    ```
-
-You can view your site locally at [`http://localhost:5173`](http://localhost:5173)
-
-
-# Community & Feedback
+# Community & Feedback 💬
 
 We'd love to hear from you! Whether you have questions, ideas, or feedback, you can engage with the Reactfolio community in our GitHub Discussions. Share your experience, ask questions, or suggest features.
 
 [Join the discussion](https://github.com/saqibbedar/Reactfolio/discussions)
 
 By participating in the discussions, you’ll help shape the future of Reactfolio. Feel free to start a new conversation or respond to existing ones!
+# Contributing 🤝
 
-# Contributing
+We welcome contributions from everyone! By contributing to this project, you not only help improve it but also get your contributions recognized on the ORCID platform. I have contributed to this project on [ORCID](https://orcid.org/0009-0006-2554-8074), where it is properly described and cited under software.
 
-Feel free to contribute to this project by opening issues or submitting pull requests. We welcome contributions from everyone!
+Feel free to open issues or submit pull requests. Your contributions will be acknowledged, and you can add them to your ORCID profile to showcase your work and gain recognition in the academic and professional community.
+
+Join us in making this project better and get your contributions recognized!
 
 # Sponsor Project ❤️
 

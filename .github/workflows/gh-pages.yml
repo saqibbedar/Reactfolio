@@ -3,7 +3,7 @@ name: Deploy Reactfolio to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - docker-deploy
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         run: |
           REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
           echo "Repository Name: $REPO_NAME"
-          sed -i "s|base: .*|base: '/$REPO_NAME/',|" vite.config.js
+          echo "BASE_PATH='/$REPO_NAME/'" >> $GITHUB_ENV
 
       - name: Build the project
         run: npm run build
