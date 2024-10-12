@@ -1,6 +1,6 @@
 
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.8.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.9.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -25,14 +25,6 @@
 # Quick Demo 🎥
 
 Check out the live demo of the portfolio [here](https://saqibbedar.github.io/Reactfolio/).
-
-# Docker Support (Deprecated) ❌
-
-Starting from version v1.8.0, Reactfolio no longer supports Docker. If you prefer to containerize your portfolio and deploy it using Docker, please refer to the [docker-deploy branch documentation](https://github.com/saqibbedar/Reactfolio/tree/docker-deploy?tab=readme-ov-file) for detailed instructions. Note that we will not handle any issues related to Docker from this version onwards.
-
-To access the Docker documentation, switch to the `docker-deploy` branch and follow the instructions provided there.
-
-Read [Docker Documentation](https://github.com/saqibbedar/Reactfolio/tree/docker-deploy?tab=readme-ov-file) for more details.
 
 # Installation & Setup 🛠️
 
@@ -70,9 +62,34 @@ const AboutPage = {
 // Similarly, update other values as needed...
 ```
 
-## Step 3: Push Changes to GitHub 🚀
+## Step 3: Update [`index.html`](https://github.com/saqibbedar/Reactfolio/blob/main/index.html) for SEO Optimization 🔍
 
-Once you’ve updated the `assets.js` file, you can push your changes to your GitHub repository.
+To improve the SEO of your portfolio, update the `index.html` file with your specific information. Open the `index.html` file and replace the existing values with your own:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Portfolio Description">
+  <meta name="keywords" content="Your, Portfolio, Keywords">
+  <meta name="author" content="Your Name">
+  <title>Your Portfolio Title</title>
+
+  <!-- Similarly, update other values as needed -->
+
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
+
+```
+
+## Step 4: Push Changes to GitHub 🚀
+
+Once you’ve updated the `index.html` file, you can push your changes to your GitHub repository.
 
 ```bash
 git add .
@@ -83,8 +100,6 @@ git push origin main
 ## Your Portfolio is Live! 🎉
 
 Congratulations! If you followed all the steps correctly, your Portfolio is now live. You can view your portfolio at [`https://<your-username>.github.io/<repository-name>/`](https://<your-username>.github.io/<repository-name>/).
-
-You can view your site locally at [`http://localhost:5173`](http://localhost:5173)
 
 # Community & Feedback 💬
 
