@@ -1,6 +1,6 @@
 
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.6.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.7.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
