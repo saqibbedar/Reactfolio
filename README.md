@@ -1,6 +1,6 @@
 
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.5.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.6.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -101,6 +101,8 @@ If you are facing any issues or errors while creating your portfolio, feel free 
 We welcome contributions from everyone! By contributing to this project, you not only help improve it but also get your contributions recognized on the ORCID platform. I have contributed to this project on [ORCID](https://orcid.org/0009-0006-2554-8074), where it is properly described and cited under software.
 
 Feel free to open issues or submit pull requests. Your contributions will be acknowledged, and you can add them to your ORCID profile to showcase your work and gain recognition in the academic and professional community.
+
+For more details read [Contribution guidelines](./CONTRIBUTING.md) in detail.
 
 Join us in making this project better and get your contributions recognized!
 
