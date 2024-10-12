@@ -1,5 +1,5 @@
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.6.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.7.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -70,9 +70,9 @@ If you prefer Docker for serving your portfolio, follow these steps:
       ```
   2. Once the image is built, you can run it with:
       ```bash
-      docker run -d -p 3000:3000 reactfolio
+      docker run -d -p 5000:5000 reactfolio
       ```
-      The portfolio will be served locally at http://localhost:3000.
+      The portfolio will be served locally at http://localhost:5000.
 
 ## Step 4: Switch to `docker-deploy` Branch
 
