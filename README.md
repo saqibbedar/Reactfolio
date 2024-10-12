@@ -1,6 +1,6 @@
 
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.7.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.8.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -26,9 +26,9 @@
 
 Check out the live demo of the portfolio [here](https://saqibbedar.github.io/Reactfolio/).
 
-# Docker Support 🐳
+# Docker Support (Deprecated) ❌
 
-Starting from version v1.4.0, Reactfolio supports Docker. If you prefer to containerize your portfolio and deploy it using Docker, please follow the instructions in the `docker-deploy` branch.
+Starting from version v1.8.0, Reactfolio no longer supports Docker. If you prefer to containerize your portfolio and deploy it using Docker, please refer to the [docker-deploy branch documentation](https://github.com/saqibbedar/Reactfolio/tree/docker-deploy?tab=readme-ov-file) for detailed instructions. Note that we will not handle any issues related to Docker from this version onwards.
 
 To access the Docker documentation, switch to the `docker-deploy` branch and follow the instructions provided there.
 
