@@ -1,5 +1,5 @@
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.4.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.5.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -106,7 +106,7 @@ Feel free to open issues or submit pull requests. Your contributions will be ack
 
 Join us in making this project better and get your contributions recognized!
 
-# Sponsor Project ❤️
+# Support Project ❤️
 
 This project is completely free under the [`MIT LICENSE`](https://github.com/saqibbedar/Reactfolio?tab=MIT-1-ov-file). If you’ve found this project helpful and would like to support its development, you can consider buying me a coffee. Your support is greatly appreciated!
 
