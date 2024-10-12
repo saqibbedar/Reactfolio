@@ -1,5 +1,5 @@
 <div align="center">
-<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.7.0</h1></span>
+<span><h1><a href="https://saqibbedar.github.io/Reactfolio/" target="_blank">Reactfolio.</a> v1.8.0</h1></span>
 
 <span>Designed for developers looking to showcase their work with style and simplicity.</span>
 
@@ -17,13 +17,21 @@
 
 ![Reactfolio Header Image](./public/header.jpg)
 
-# Welcome Docker Users! 🚀
+# Important Notice: Docker Support Discontinued 🚫🐳
 
-**Reactfolio** now supports Docker from version 1.4.0! If you're interested in containerizing your portfolio and deploying it with ease, you're in the right place. We've created a new `docker-deploy` branch specifically for users who want to build and deploy their projects using Docker. This branch includes automated deployment via GitHub Actions, making it simpler than ever to showcase your work.
+As of version 1.8.0, **Reactfolio** will no longer support Docker deployment. This decision was made due to several reasons:
 
-# Installation & Setup 🛠️
+1. **Deployment Issues**: We faced numerous issues with Docker deployment, making it unreliable for this project.
+2. **Complexity**: Managing Docker for a small project like this adds unnecessary complexity for both users and contributors.
+3. **Privacy Concerns**: Docker deployment requires credentials, and since this repository is public, we want to protect everyone's privacy.
+4. **Unified Branch**: Maintaining two different branches (`main` and `docker-deploy`) was confusing for users and contributors. We have decided to streamline the process by focusing solely on the `main` branch.
 
-Follow these steps to create and deploy your portfolio:
+For these reasons, we recommend all users and contributors to refer to the `main` branch for the latest updates and features. You can find the detailed documentation for getting started with the project [here](https://github.com/saqibbedar/Reactfolio/tree/main?tab=readme-ov-file).
+
+
+# Installation & Setup (Not Recommended) 🛠️
+
+If you still wish to use Docker, you can follow the steps below. However, please note that we do not recommend this approach and will not be responsible for any issues that arise. You will need to set the necessary credentials in your settings.
 
 ## Step 1: Fork and Clone the Repository 📂
 
@@ -74,7 +82,11 @@ If you prefer Docker for serving your portfolio, follow these steps:
       ```
       The portfolio will be served locally at http://localhost:5000.
 
-## Step 4: Switch to `docker-deploy` Branch
+### Step 4: Update GitHub Actions Workflow
+
+Ensure that the GitHub Actions workflow is correctly set up for Docker deployment. You will need to set the necessary credentials in your repository settings.
+
+## Step 5: Switch to `docker-deploy` Branch
 
 Before making any changes, ensure you are on the `docker-deploy` branch. You can switch to this branch using the following command:
 
@@ -82,7 +94,7 @@ Before making any changes, ensure you are on the `docker-deploy` branch. You can
 git checkout docker-deploy
 ```
 
-## Step 5: Push Changes to GitHub
+## Step 6: Push Changes to GitHub
 
 Once you’ve updated the `assets.js` file, you can push your changes to your GitHub repository on the `docker-deploy` branch.
 
@@ -98,6 +110,7 @@ We'd love to hear from you! Whether you have questions, ideas, or feedback, you 
 [Join the discussion](https://github.com/saqibbedar/Reactfolio/discussions)
 
 By participating in the discussions, you’ll help shape the future of Reactfolio. Feel free to start a new conversation or respond to existing ones!
+
 # Contributing 🤝
 
 We welcome contributions from everyone! By contributing to this project, you not only help improve it but also get your contributions recognized on the ORCID platform. I have contributed to this project on [ORCID](https://orcid.org/0009-0006-2554-8074), where it is properly described and cited under software.

@@ -10,25 +10,30 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
         with:
-          node-version: '20.15.1'
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Update vite.config.js base value
-        run: |
-          REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
-          echo "Repository Name: $REPO_NAME"
-          echo "BASE_PATH='/$REPO_NAME/'" >> $GITHUB_ENV
-
-      - name: Build the project
-        run: npm run build
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/reactfolio:latest
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        run: |
+          docker run --rm -v $(pwd)/dist:/dist ${{ secrets.DOCKER_USERNAME }}/reactfolio:latest
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git clone --branch gh-pages https://github.com/${{ github.repository }} gh-pages
+          cp -r dist/* gh-pages/
+          cd gh-pages
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push origin gh-pages
